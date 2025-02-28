@@ -3,11 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
     <title>Bai tap hinh ảnh</title>
   </head>
 
   <body>
    <h1> Hình ảnh mặt trăng<h1>
     <img src="https://images.unsplash.com/photo-1503416997304-7f8bf166c121" alt="Hình ảnh không hiển thị được" width="200"/>
+=======
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Trang web bán hàng</title>
+  </head>
+  <body>
+    <header>
+      <h1>Trang web bán hàng</h1>
+    </header>
+    <!-- Menu -->
+    <nav>
+      <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Sản phẩm</a></li>
+        <li><a href="#">Liên hệ</a></li>
+      </ul>
+    </nav>
+    <!--  -->
+    <div class="product-list">
+      <div class="product-card" onclick="viewProductDetail('product1')">
+        <img src="https://picsum.photos/id/684/600/400" alt="Hình Ảnh" />
+        <h2>Sản phẩm 1</h2>
+        <p>Mô tả sản phẩm 1</p>
+        <p>Giá: 100.000đ</p>
+        <button class="button button1">Mua Ngay</button>
+      </div>
+      <!-- Thêm sản phẩm cho trang web -->
+      <div class="product-card" onclick="viewProductDetail('product2')">
+        <img src="https://picsum.photos/id/1025/600/400" alt="Hình Ảnh" />
+        <h2>Sản phẩm 2</h2>
+        <p>Mô tả sản phẩm 2</p>
+        <p>Giá: 120.000đ</p>
+        <button class="button button2">Mua Ngay</button>
+      </div>
+      <!-- Thêm SP -->
+      <div class="product-card" onclick="viewProductDetail('product3')">
+        <img src="https://picsum.photos/id/1060/600/400" alt="Hình Ảnh" />
+        <h2>Sản phẩm 3</h2>
+        <p>Mô tả sản phẩm 3</p>
+        <p>Giá: 125.000đ</p>
+        <button class="button button3">Mua Ngay</button>
+      </div>
+      <!--  -->
+      <div class="product-card" onclick="viewProductDetail('product4')">
+        <img src="https://picsum.photos/id/30/600/400" alt="Hình Ảnh" />
+        <h2>Sản phẩm 4</h2>
+        <p>Mô tả sản phẩm 4</p>
+        <p>Giá: 150.000đ</p>
+        <button class="button button4">Mua Ngay</button>
+      </div>
+      <!--  -->
+      <div class="product-card" onclick="viewProductDetail('product5')">
+        <img src="https://picsum.photos/id/431/600/400" alt="Hình Ảnh" />
+        <h2>Sản phẩm 5</h2>
+        <p>Mô tả sản phẩm 5</p>
+        <p>Giá: 150.000đ</p>
+        <button class="button button5">Mua Ngay</button>
+      </div>
+    </div>
+    <!--Sidebar  -->
+    <div class="sidebar">
+      <!-- Hiện thị sidebar -->
+      <div class="social-icons">
+        <a href="#">Facebook</a>
+        <a href="#">X</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer-item">
+        <h3>Cột 1</h3>
+        <p>Nội dung cột 1</p>
+      </div>
+      <div class="footer-item">
+        <h3>Cột 2</h3>
+        <p>Nội dung cột 2</p>
+      </div>
+      <div class="footer-item">
+        <h3>Cột 3</h3>
+        <p>Nội dung cột 3</p>
+      </div>
+    </div>
+    <script>
+      function viewProductDetail(productId) {
+        // Chuyển hướng đến trang chi tiết sản phẩm với tham số URL
+        window.location.href = "product-detail.html?id=" + productId;
+      }
+    </script>
+>>>>>>> 3ce6c00 (Initial commit)
   </body>
 </html>

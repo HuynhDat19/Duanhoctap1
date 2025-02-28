@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chi tiết sản phẩm</title>
+  </head>
+  <body>
+    <div class="product-detail">
+      <img id="product-image" src="" alt="Hình ảnh sản phẩm" />
+      <h1 id="product-name">Tên sản phẩm</h1>
+      <p id="product-description">
+        Mô tả chi tiết sản phẩm. Đây là mô tả chi tiết của sản phẩm.
+      </p>
+      <div class="price" id="product-price">Giá: 100.000đ</div>
+      <a href="index.html" class="back-button">Tiếp tục mua sắm</a>
+    </div>
+    <script>
+      // Dữ liệu sản phẩm
+      const products = {
+        product1: {
+          name: "Sản phẩm 1",
+          description:
+            "Mô tả chi tiết sản phẩm 1. Đây là mô tả chi tiết của sản phẩm 1.",
+          price: "100.000đ",
+          image: "https://picsum.photos/id/684/600/400",
+        },
+        product2: {
+          name: "Sản phẩm 2",
+          description:
+            "Mô tả chi tiết sản phẩm 2. Đây là mô tả chi tiết của sản phẩm 2.",
+          price: "120.000đ",
+          image: "https://picsum.photos/id/1025/600/400",
+        },
+        product3: {
+          name: "Sản phẩm 3",
+          description:
+            "Mô tả chi tiết sản phẩm 3. Đây là mô tả chi tiết của sản phẩm 3.",
+          price: "125.000đ",
+          image: "https://picsum.photos/id/1060/600/400",
+        },
+        product4: {
+          name: "Sản phẩm 4",
+          description:
+            "Mô tả chi tiết sản phẩm 4. Đây là mô tả chi tiết của sản phẩm 4.",
+          price: "150.000đ",
+          image: "https://picsum.photos/id/30/600/400",
+        },
+        product5: {
+          name: "Sản phẩm 5",
+          description:
+            "Mô tả chi tiết sản phẩm 5. Đây là mô tả chi tiết của sản phẩm 5.",
+          price: "150.000đ",
+          image: "https://picsum.photos/id/431/600/400",
+        },
+      };
+
+      // Lấy tham số URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = urlParams.get("id");
+
+      // Hiển thị thông tin sản phẩm
+      if (products[productId]) {
+        document.getElementById("product-name").textContent =
+          products[productId].name;
+        document.getElementById("product-description").textContent =
+          products[productId].description;
+        document.getElementById("product-price").textContent =
+          "Giá: " + products[productId].price;
+        document.getElementById("product-image").src =
+          products[productId].image;
+      } else {
+        document.getElementById("product-name").textContent =
+          "Sản phẩm không tồn tại";
+        document.getElementById("product-description").textContent = "";
+        document.getElementById("product-price").textContent = "";
+        document.getElementById("product-image").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
