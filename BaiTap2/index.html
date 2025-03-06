@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Shop</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Pet Shop</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#most-purchased">Most Purchased</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+      <!-- Featured Pets Section -->
+      <div id="featured-pets" class="carousel slide" data-ride="carousel">
+        <h2>Thú cưng nổi bật</h2>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/hinh3.jpeg"
+              class="d-block w-100"
+              alt="Mua nhiều nhất"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Chó Shiba</h5>
+              <p>Thuộc loài ngoan ngoản.</p>
+              <a
+                href="cart.html?name=Ch%C3%B3%20Shiba&image=./img/hinh3.jpeg&description=Thu%E1%BB%99c%20lo%C3%A0i%20ngoan%20ngo%E1%BA%A3n"
+                class="btn btn-primary"
+                >Mua Ngay</a
+              >
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/hinh2.jpeg"
+              class="d-block w-100"
+              alt="Featured Pet 2"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Chó Alaska</h5>
+              <p>Thân thiện</p>
+              <a
+                href="cart.html?name=Ch%C3%B3%20Alaska&image=./img/hinh2.jpeg&description=Th%C3%A2n%20thi%E1%BB%87n"
+                class="btn btn-primary"
+                >Mua Ngay</a
+              >
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/hinh1.jpeg"
+              class="d-block w-100"
+              alt="Featured Pet 3"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cá xiêm</h5>
+              <p>MÀu trắng tinh khiết</p>
+              <a
+                href="cart.html?name=C%C3%A1%20xi%C3%AAm&image=./img/hinh1.jpeg&description=M%C3%80u%20tr%E1%BA%AFng%20tinh%20khi%E1%BA%BFt"
+                class="btn btn-primary"
+                >Mua Ngay</a
+              >
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#featured-pets"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Trước</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#featured-pets"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Tiếp tục</span>
+        </a>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="row mb-4 mt-5">
+        <div class="col-md-12">
+          <form class="form-inline">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search for pets"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Home Section -->
+      <div id="home">
+        <!-- Pet Information Section -->
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./img/hinh1.jpeg" class="card-img-top" alt="Pet 1" />
+              <div class="card-body">
+                <h5 class="card-title">Cá xiêm</h5>
+                <p class="card-text">Màu trắng tinh khiết.</p>
+                <a
+                  href="cart.html?name=C%C3%A1%20xi%C3%AAm&image=./img/hinh1.jpeg&description=M%C3%A0u%20tr%E1%BA%AFng%20tinh%20khi%E1%BA%BFt"
+                  class="btn btn-primary"
+                  >Mua Ngay</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./img/hinh2.jpeg" class="card-img-top" alt="Pet 2" />
+              <div class="card-body">
+                <h5 class="card-title">Chó Alaska</h5>
+                <p class="card-text">Siêu to siêu dễ thương</p>
+                <a
+                  href="cart.html?name=Ch%C3%B3%20Alaska&image=./img/hinh2.jpeg&description=Si%C3%AAu%20to%20si%C3%AAu%20d%E1%BB%85%20th%C6%B0%C6%A1ng"
+                  class="btn btn-primary"
+                  >Mua Ngay</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./img/hinh3.jpeg" class="card-img-top" alt="Pet 3" />
+              <div class="card-body">
+                <h5 class="card-title">Chó Shiba</h5>
+                <p class="card-text">Siêu đáng yêu.</p>
+                <a
+                  href="cart.html?name=Ch%C3%B3%20Shiba&image=./img/hinh3.jpeg&description=Si%C3%AAu%20%C4%91%C3%A1ng%20y%C3%AAu"
+                  class="btn btn-primary"
+                  >Mua Ngay</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./img/hinh4.jpeg" class="card-img-top" alt="Pet 4" />
+              <div class="card-body">
+                <h5 class="card-title">Meo mướp</h5>
+                <p class="card-text">Bé bị tròn.</p>
+                <a
+                  href="cart.html?name=Meo%20m%C6%B0%E1%BB%9Bp&image=./img/hinh4.jpeg&description=B%C3%A9%20b%E1%BB%8B%20tr%C3%B2n"
+                  class="btn btn-primary"
+                  >Mua Ngay</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Most Purchased Pets Section -->
+      <div id="most-purchased" class="mt-5">
+        <h2>Thú cưng được mua nhiều nhất</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./img/hinh2.jpeg" class="card-img-top" alt="Alaska" />
+              <div class="card-body">
+                <h5 class="card-title">Alaska</h5>
+                <p class="card-text">Siêu dễ thương</p>
+                <a href="#" class="btn btn-primary">Mua Ngay</a>
+              </div>
+            </div>
+          </div>
+          <!-- ...additional most purchased pet cards... -->
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div id="contact" class="mt-5">
+        <h2>Contact Us</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="3"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+      <!-- Newsletter Subscription Section -->
+      <div id="newsletter" class="mt-5">
+        <h2>Subscribe to our Newsletter</h2>
+        <form>
+          <div class="form-group">
+            <label for="newsletter-email">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="newsletter-email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-center text-lg-start mt-5">
+      <div class="container p-4">
+        <p>&copy; 2023 Pet Shop. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function addToCart(name, image, description) {
+        const cartItems = document.getElementById("cart-items");
+        const listItem = document.createElement("li");
+        listItem.className = "list-group-item";
+        listItem.innerHTML = `
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <img src="${image}" alt="${name}" style="width: 50px; height: 50px; object-fit: cover;">
+              <strong>${name}</strong>
+              <p>${description}</p>
+            </div>
+            <button class="btn btn-primary" onclick="buyItem('${name}')">Buy</button>
+          </div>
+        `;
+        cartItems.appendChild(listItem);
+      }
+
+      function buyItem(name) {
+        alert(`Successfully purchased ${name}!`);
+        window.location.href = "#home";
+      }
+
+      function buyItems() {
+        alert("Successfully purchased all items in the cart!");
+        window.location.href = "#home";
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
